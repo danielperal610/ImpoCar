@@ -1,0 +1,3 @@
+<!-- Placeholder para imagen de vehículo -->
+<!-- Reemplaza con una imagen real de un Seat Ibiza o similar -->
+<!-- Ejemplo: <img src="assets/seat-ibiza.jpg" alt="Seat Ibiza"> -->

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImpoCar - Importación y Venta de Vehículos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/ImpoCar_Logo.png" alt="ImpoCar Logo"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#catalogo">Catálogo de Stock</a></li>
+                    <li><a href="#coche-carta">Coche a la Carta</a></li>
+                    <li><a href="#traemos-coche">Traemos tu Coche</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero plain-hero">
+            <div class="container">
+                <h2>Bienvenido a ImpoCar</h2>
+                <p>Tu socio confiable en la importación y venta de vehículos de calidad.</p>
+            </div>
+        </section>
+
+                <!-- NUEVA SECCIÓN: Hero/Intro + Cómo trabajamos -->
+                <section id="impo-intro" class="impo-section">
+                    <div class="impo-container">
+                        <!-- BLOQUE 1: Hero / Presentación -->
+                        <div class="impo-hero">
+                            <img src="assets/ImpoCar_Logo.png" alt="ImpoCar" class="impo-hero-logo">
+                            <h2 class="impo-hero-title">ImpoCar, una empresa de la Organización Peral SL</h2>
+                            <p class="impo-hero-desc">Nos encargamos de importar coches de otros países. Puedes elegir entre los de nuestro catálogo, pedirnos un coche a la carta con tus especificaciones, o indicarnos uno que ya hayas encontrado y nosotros nos encargamos de traértelo.</p>
+                        </div>
+
+                        <!-- BLOQUE 2: Cómo trabajamos -->
+                        <div class="impo-how">
+                            <header class="how-header">
+                                <h3 class="how-title">CÓMO TRABAJAMOS</h3>
+                                <div class="how-sub">18 DÍAS DESDE EUROPA. 45 DESDE USA</div>
+                                <div class="how-note"><em>Desde la firma de contrato hasta la entrega del vehículo con las placas españolas a nombre del comprador</em></div>
+                            </header>
+
+                            <div class="how-grid">
+                                <div class="how-left">
+                                    <ul class="how-list">
+                                        <li>IMPORTAMOS COCHES DE FORMA HONRADA Y TRANSPARENTE</li>
+                                        <li>CONSEGUIMOS EL COCHE QUE QUIERAS</li>
+                                        <li>CON LA CONFIGURACIÓN QUE NOS DIGAS</li>
+                                        <li>REALIZAMOS TODOS LOS TRÁMITES DE IMPORTACIÓN</li>
+                                        <li>Y TE LO ENTREGAMOS DONDE NOS DIGAS</li>
+                                    </ul>
+                                </div>
+
+                                <div class="how-right">
+                                                    <img src="assets/Golf_R.png" alt="Volkswagen Golf R" class="how-image no-frame">
+                                                </div>
+                            </div>
+
+                            <!-- Fila inferior de garantías -->
+                            <div class="guarantees-grid">
+                                <div class="guarantee">
+                                    <svg class="g-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 20v-1a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <h4>PROPIETARIOS ANTERIORES</h4>
+                                    <p>En la documentación de importación del vehículo siempre aparecerán todos los propietarios anteriores.</p>
+                                </div>
+
+                                <div class="guarantee">
+                                    <svg class="g-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <h4>DAÑOS Y DEFECTOS</h4>
+                                    <p>Informamos si el coche ha tenido accidentes o algún desperfecto y todas las facturas de dichas reparaciones.</p>
+                                </div>
+
+                                <div class="guarantee">
+                                    <svg class="g-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 21a10 10 0 1 1 10 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.24 7.76L13 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <h4>KILÓMETROS</h4>
+                                    <p>Comprobamos que los kilómetros son los que están registrados oficialmente en la base de datos de la marca, en las aseguradoras, en las ITV, etc.</p>
+                                </div>
+
+                                <div class="guarantee">
+                                    <svg class="g-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 13v4a1 1 0 0 0 1 1h1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13h-8V6h9l2 4v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 21h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <h4>TE LO LLEVAMOS</h4>
+                                    <p>Entrega a domicilio en toda España. Imagínate cuando abras la puerta de casa y te lo veas ahí esperándote...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <section id="catalogo" class="section catalogo">
+            <div class="container">
+                <h2>Catálogo de Stock</h2>
+                <p>Explora nuestra selección de vehículos revisados y listos para su entrega inmediata en España. Calidad, transparencia y garantía ImpoCar.</p>
+                <div class="grid-vehiculos">
+                    <div class="card-vehiculo">
+                        <img src="assets/IBIZA6L.png" alt="Seat Ibiza">
+                        <h3>Seat Ibiza 1.9 TDI AXR 100cv</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2007</span><span>Kilometraje: 150,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.9 TDI</span><span>CV: 100</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 4,500 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('seat-ibiza')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/GolfTDI.png" alt="Volkswagen Golf">
+                        <h3>Volkswagen Golf 1.9 TDI Highline</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2008</span><span>Kilometraje: 180,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.9 TDI</span><span>CV: 105</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 5,200 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('volkswagen-golf')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/BMW320D.png" alt="BMW Serie 3">
+                        <h3>BMW Serie 3 320d</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2010</span><span>Kilometraje: 120,000 km</span></div>
+                            <div class="fila"><span>Motor: 2.0 Diesel</span><span>CV: 184</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 8,900 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('bmw-serie-3')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/AudiA4_TDI.png" alt="Audi A4">
+                        <h3>Audi A4 2.0 TDI Avant</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2009</span><span>Kilometraje: 160,000 km</span></div>
+                            <div class="fila"><span>Motor: 2.0 TDI</span><span>CV: 140</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 7,500 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('audi-a4')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/MercedesC220CDI.png" alt="Mercedes C-Class">
+                        <h3>Mercedes-Benz Clase C 220 CDI</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2011</span><span>Kilometraje: 140,000 km</span></div>
+                            <div class="fila"><span>Motor: 2.1 CDI</span><span>CV: 170</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 9,800 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('mercedes-c-class')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/FordFocus_TDCi.png" alt="Ford Focus">
+                        <h3>Ford Focus 1.6 TDCi Titanium</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2012</span><span>Kilometraje: 110,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.6 TDCi</span><span>CV: 115</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 6,300 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('ford-focus')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/OpelAstraCosmo.png" alt="Opel Astra">
+                        <h3>Opel Astra 1.7 CDTI Cosmo</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2006</span><span>Kilometraje: 190,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.7 CDTI</span><span>CV: 100</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: No</span></div>
+                            <p class="precio">Precio: 3,800 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('opel-astra')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/RenaultMegane3.png" alt="Renault Megane">
+                        <h3>Renault Megane III 1.5 dCi Dynamique</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2013</span><span>Kilometraje: 100,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.5 dCi</span><span>CV: 110</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 7,200 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('renault-megane')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/GTI_JR.png" alt="Golf VI GTI">
+                        <h3>Volkswagen Golf VI GTI 2.0 TSI DSG</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2011</span><span>Kilometraje: 200,000 km</span></div>
+                            <div class="fila"><span>Motor: 2.0 TSI</span><span>CV: 210</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 11,200 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('peugeot-308')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/CitroenC4.png" alt="Citroen C4">
+                        <h3>Citroën C4 1.6 HDi Exclusive</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2015</span><span>Kilometraje: 85,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.6 HDi</span><span>CV: 92</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
+                            <p class="precio">Precio: 9,000 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('citroen-c4')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/Fiat500.png" alt="Fiat 500">
+                        <h3>Fiat 500 1.2 Lounge</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2010</span><span>Kilometraje: 130,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.2 Gasolina</span><span>CV: 69</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: B</span></div>
+                            <p class="precio">Precio: 4,200 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('fiat-500')">Más Información</button>
+                    </div>
+                    <div class="card-vehiculo">
+                        <img src="assets/CorollaD4D.png" alt="Toyota Corolla">
+                        <h3>Toyota Corolla 1.4 D-4D Terra</h3>
+                        <div class="datos">
+                            <div class="fila"><span>Año: 2005</span><span>Kilometraje: 200,000 km</span></div>
+                            <div class="fila"><span>Motor: 1.4 D-4D</span><span>CV: 90</span></div>
+                            <div class="fila"><span>Etiqueta Medioambiental: No</span></div>
+                            <p class="precio">Precio: 3,500 €</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openModal('toyota-corolla')">Más Información</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="coche-carta" class="section coche-carta">
+            <div class="container">
+                <h2>Coche a la Carta</h2>
+                <p>¿Tienes un coche exacto en mente? Rellena nuestro asistente indicando marca, modelo, motorización y los extras que consideras imprescindibles. Nosotros nos encargamos de buscarlo en el mercado internacional, calculamos todos los impuestos y gastos de importación, y te enviamos un presupuesto cerrado directamente a tu correo electrónico.</p>
+                <div class="wizard">
+                    <div class="wizard-steps">
+                        <div class="step active" data-step="1">Paso 1: Marca</div>
+                        <div class="step" data-step="2">Paso 2: Modelo</div>
+                        <div class="step" data-step="3">Paso 3: Presupuesto</div>
+                        <div class="step" data-step="4">Paso 4: Extras</div>
+                        <div class="step" data-step="5">Paso 5: Correo</div>
+                    </div>
+                    <form class="wizard-form">
+                        <div class="wizard-content active" data-step="1">
+                            <label for="marca">Marca:</label>
+                            <select id="marca" name="marca" required>
+                                <option value="">Selecciona una marca</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Seat">Seat</option>
+                                <option value="Dacia">Dacia</option>
+                                <option value="Kia">Kia</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Otra">Otra</option>
+                            </select>
+                            <input type="text" id="marca-otra" name="marca-otra" placeholder="Escribe la marca" style="display:none; margin-top:8px;" autocomplete="off">
+                            <button type="button" class="btn-next">Siguiente</button>
+                        </div>
+                        <div class="wizard-content" data-step="2">
+                            <label for="modelo">Modelo:</label>
+                            <input type="text" id="modelo" name="modelo" required>
+                            <button type="button" class="btn-prev">Anterior</button>
+                            <button type="button" class="btn-next">Siguiente</button>
+                        </div>
+                        <div class="wizard-content" data-step="3">
+                            <label for="presupuesto">Presupuesto Máximo:</label>
+                            <input type="number" id="presupuesto" name="presupuesto" required>
+                            <button type="button" class="btn-prev">Anterior</button>
+                            <button type="button" class="btn-next">Siguiente</button>
+                        </div>
+                        <div class="wizard-content" data-step="4">
+                            <label for="extras-group">Extras:</label>
+                            <div id="extras-group" class="extras-checkboxes">
+                                <div class="extras-option" data-value="Sin preferencia">Sin preferencia</div>
+                                <div class="extras-option" data-value="Navegador GPS">Navegador GPS</div>
+                                <div class="extras-option" data-value="Sensores de aparcamiento">Sensores de aparcamiento</div>
+                                <div class="extras-option" data-value="Cámara de visión trasera">Cámara de visión trasera</div>
+                                <div class="extras-option" data-value="Llantas de aleación">Llantas de aleación</div>
+                                <div class="extras-option" data-value="Asientos calefactables">Asientos calefactables</div>
+                                <div class="extras-option" data-value="Faros LED">Faros LED</div>
+                                <div class="extras-option" data-value="Techo solar">Techo solar</div>
+                                <div class="extras-option" data-value="Control de crucero adaptativo">Control de crucero adaptativo</div>
+                                <div class="extras-option" data-value="Apple CarPlay / Android Auto">Apple CarPlay / Android Auto</div>
+                                <div class="extras-option" data-value="Climatizador bizona">Climatizador bizona</div>
+                                <div class="extras-option" data-value="Sistema de audio premium">Sistema de audio premium</div>
+                            </div>
+                            <button type="button" class="btn-prev">Anterior</button>
+                            <button type="button" class="btn-next">Siguiente</button>
+                        </div>
+                        <div class="wizard-content" data-step="5">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                            <button type="button" class="btn-prev">Anterior</button>
+                            <button type="submit" class="btn-primary">Solicitar Presupuesto</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="traemos-coche" class="section traemos-coche">
+            <div class="container">
+                <h2>Traemos tu Coche</h2>
+                <p>Si ya has hecho el trabajo de búsqueda y has encontrado el coche de tus sueños en un portal extranjero, simplemente pega el enlace aquí. Nosotros nos encargamos de todo el papeleo, el transporte en grúa y la matriculación para dejártelo en la puerta de tu casa.</p>
+                <form class="form-traemos">
+                    <label for="url-anuncio">URL del Anuncio:</label>
+                    <input type="url" id="url-anuncio" name="url-anuncio" required>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <button type="submit" class="btn-primary">Iniciar Importación</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@impocar.es</p>
+                    <p>Teléfono: +34 123 456 789</p>
+                    <p>Dirección: Calle Ficticia 123, Madrid, España</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Políticas</h3>
+                    <ul>
+                        <li><a href="privacy.html">Política de Privacidad</a></li>
+                        <li><a href="terms.html">Términos y Condiciones</a></li>
+                        <li><a href="#">RGPD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Más Información -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Solicitar Más Información</h2>
+            <form id="info-form">
+                <label for="modal-nombre">Nombre:</label>
+                <input type="text" id="modal-nombre" name="nombre" required>
+                <label for="modal-correo">Correo Electrónico:</label>
+                <input type="email" id="modal-correo" name="correo" required>
+                <label for="modal-telefono">Número de Teléfono:</label>
+                <input type="tel" id="modal-telefono" name="telefono" required>
+                <label for="modal-comentario">Comentario:</label>
+                <textarea id="modal-comentario" name="comentario"></textarea>
+                <button type="submit" class="btn-primary">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+        <script src="js/main.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var extrasOptions = document.querySelectorAll('#extras-group .extras-option');
+            if (extrasOptions.length) {
+                extrasOptions.forEach(function(opt) {
+                    opt.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        if (this.dataset.value === 'Sin preferencia') {
+                            extrasOptions.forEach(function(o) {
+                                if (o !== opt) o.classList.remove('selected');
+                            });
+                            this.classList.toggle('selected');
+                        } else {
+                            var sinPref = Array.from(extrasOptions).find(function(o) { return o.dataset.value === 'Sin preferencia'; });
+                            if (sinPref) sinPref.classList.remove('selected');
+                            this.classList.toggle('selected');
+                        }
+                    });
+                });
+            }
+        });
+        </script>
+</body>
+</html>
