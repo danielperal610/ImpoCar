@@ -132,6 +132,10 @@ body {
     background-color: var(--bg-color);
 }
 
+main {
+    padding-top: 70px; /* Space for the fixed header */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -152,11 +156,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 16px;
+    padding: 0.2rem 16px;
 }
 
 .logo img {
-    width: 120px;
+    width: 100px;
     height: auto;
 }
 
@@ -188,7 +192,7 @@ body {
 .hero.plain-hero {
     background: transparent;
     color: var(--text-color);
-    padding: 40px 0 20px;
+    padding: 0 0 20px;
     text-align: center;
 }
 
