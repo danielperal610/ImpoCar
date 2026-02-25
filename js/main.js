@@ -76,10 +76,10 @@ function initForms() {
             return;
         }
         // Paso 3: Presupuesto
-        if (!presupuesto.value.trim()) {
-            e.preventDefault();
-            alert('Debes indicar el presupuesto máximo (Paso 3).');
-            return;
+        if (!presupuesto.value.trim() || parseInt(presupuesto.value) < 3000) {
+             e.preventDefault();
+            alert('Debes indicar un presupuesto válido de al menos 3000€ (Paso 3).');
+             return;
         }
         // Paso 4: Extras (validar selección múltiple y lógica de 'Sin preferencia')
         const extrasSelected = Array.from(extrasOptions).filter(opt => opt.classList.contains('selected')).map(opt => opt.dataset.value);
