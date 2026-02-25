@@ -133,7 +133,7 @@ body {
 }
 
 main {
-    padding-top: 70px; /* Space for the fixed header */
+    padding-top: 90px; /* Space for the fixed header */
 }
 
 .container {
@@ -156,11 +156,11 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 16px;
+    padding: 0.1rem 16px;
 }
 
 .logo img {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
@@ -174,11 +174,11 @@ main {
     text-decoration: none;
     color: #ffffff;
     background-color: var(--logo-color);
-    padding: 0.35rem 0.6rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 10px;
     font-weight: 700;
     display: inline-block;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
@@ -188,24 +188,7 @@ main {
 }
 
 
-/* Hero (plain) */
-.hero.plain-hero {
-    background: transparent;
-    color: var(--text-color);
-    padding: 0 0 20px;
-    text-align: center;
-}
 
-.hero.plain-hero h2 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero.plain-hero p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--secondary-color);
-}
 
 .btn-primary {
     background-color: var(--white);
@@ -570,15 +553,15 @@ html {
 .impo-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
 /* Hero */
-.impo-hero { text-align: center; margin-bottom: 40px; }
-.impo-hero-logo { width: 180px; height: auto; display: block; margin: 0 auto 18px; }
-.impo-hero-title { font-size: 1.5rem; color: var(--text-color); font-weight: 800; margin-bottom: 12px; }
-.impo-hero-desc { max-width: 900px; margin: 0 auto; color: var(--secondary-color); font-size: 1rem; line-height: 1.6; }
+.impo-hero { text-align: center; padding: 20px 0; margin-bottom: 40px; }
+.impo-hero-logo { width: 150px; height: auto; display: block; margin: 0 auto 18px; }
+.impo-hero-title { font-size: 1.7rem; color: var(--text-color); font-weight: 800; margin-bottom: 12px; }
+.impo-hero-desc { max-width: 900px; margin: 0 auto; color: var(--secondary-color); font-size: 0.9rem; line-height: 1.6; }
 
 /* Cómo trabajamos header */
 .impo-how .how-header { text-align: center; margin-bottom: 40px; }
-.how-title { color: var(--secondary-color); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
-.how-sub { font-weight: 800; color: var(--text-color); font-size: 1rem; margin-bottom: 6px; }
+.how-title { color: var(--secondary-color); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; }
+.how-sub { font-weight: 800; color: var(--text-color); font-size: 0.9rem; margin-bottom: 6px; }
 .how-note { font-style: italic; color: var(--secondary-color); font-size: 0.9rem; }
 
 /* Main grid: two columns on desktop, single column mobile */
@@ -589,7 +572,7 @@ html {
 /* List with "+" bullets */
 
 .how-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
-.how-list li { position: relative; padding-left: 28px; font-weight: 700; color: var(--text-color); font-size: 0.98rem; }
+.how-list li { position: relative; padding-left: 28px; font-weight: 700; color: var(--text-color); font-size: 0.9rem; }
 .how-list li::before { content: "+"; position: absolute; left: 0; top: 0; color: var(--accent-color); font-weight: 800; font-size: 1.2rem; line-height: 1; }
 
 /* Right image */
