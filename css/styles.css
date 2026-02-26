@@ -142,21 +142,107 @@ main {
     padding: 0 20px;
 }
 
-/* Header */
+
+/* --- NUEVO ENCABEZADO ISLA FLOTANTE --- */
 .header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--white);
-    box-shadow: var(--shadow);
+    background-color: transparent; /* Fundamental para el efecto flotante */
     z-index: 1000;
+    padding: 20px 0; 
+    transition: all 0.3s ease;
 }
 
-.header .container {
+.header-floating-island {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.1rem 16px;
+    background: rgba(255, 255, 255, 0.8); /* Transparencia */
+    backdrop-filter: blur(12px); /* Efecto cristal */
+    -webkit-backdrop-filter: blur(12px);
+    padding: 8px 20px;
+    border-radius: 50px; 
+    border: 1px solid rgba(11, 35, 64, 0.1);
+    box-shadow: 0 10px 30px rgba(11, 35, 64, 0.12);
+    max-width: 950px !important; /* Isla más compacta */
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 65px; /* Un poco más pequeño para elegancia */
+    height: auto;
+    display: block;
+}
+
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    background: #f1f5f9; /* Fondo de la "píldora" central */
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--logo-color);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav a span { font-size: 1.1rem; }
+
+.nav a:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-contact-mini {
+    text-decoration: none;
+    background-color: var(--logo-color);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.btn-contact-mini:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste importante para que el contenido no empiece debajo del header */
+main {
+    padding-top: 110px; 
+}
+
+/* Responsive para que no se rompa la isla */
+@media (max-width: 768px) {
+    .header { padding: 10px 0; }
+    .header-floating-island { width: 95%; padding: 6px 12px; }
+    .nav a span { display: none; } /* Quitamos iconos en móvil */
+    .header-right { display: none; } /* Quitamos botón llamar en móvil */
+    .logo img { width: 55px; }
 }
 
 .logo img {
@@ -164,28 +250,7 @@ main {
     height: auto;
 }
 
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
 
-.nav a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: var(--logo-color);
-    padding: 0.25rem 0.5rem;
-    border-radius: 10px;
-    font-weight: 700;
-    display: inline-block;
-    font-size: 0.85rem;
-    transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.nav a:hover {
-    background-color: #062033;
-    transform: translateY(-2px);
-}
 
 
 
@@ -630,3 +695,37 @@ html {
 .impo-hero-logo { max-width: 220px; }
 
 /* End section styles */
+
+/* --- Estilos para los Logos de Redes Sociales --- */
+.social-links {
+    display: flex;
+    gap: 15px; /* Espacio entre los logos */
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-links li a {
+    color: var(--logo-color); /* Color base del logo */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links svg {
+    width: 24px;  /* Tamaño del icono */
+    height: 24px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Efecto al pasar el ratón */
+.social-links li a:hover {
+    color: var(--primary-color); /* Cambia al azul brillante del botón */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+}
+
+/* Ajuste para que el footer siga siendo compacto */
+.footer-section h3 {
+    margin-bottom: 0.8rem;
+}
