@@ -99,18 +99,18 @@
                 <h2>Catálogo de Stock</h2>
                 <p>Explora nuestra selección de vehículos revisados y listos para su entrega inmediata en España. Calidad, transparencia y garantía ImpoCar.</p>
                 <div class="grid-vehiculos">
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="seat-ibiza">
                         <img src="assets/IBIZA6L.png" alt="Seat Ibiza">
-                        <h3>Seat Ibiza 1.9 TDI AXR 100cv</h3>
+                        <h3>Seat Ibiza 1.9 TDI Sport 100cv</h3>
                         <div class="datos">
                             <div class="fila"><span>Año: 2007</span><span>Kilometraje: 130,000 km</span></div>
                             <div class="fila"><span>Motor: 1.9 TDI</span><span>CV: 100</span></div>
                             <div class="fila"><span>Etiqueta Medioambiental: B</span></div>
                             <p class="precio">Precio: 4,500 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('seat-ibiza')">Más Información</button>
+                        
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="volkswagen-golf">
                         <img src="assets/GolfTDI.png" alt="Volkswagen Golf">
                         <h3>Volkswagen Golf 1.9 TDI Highline</h3>
                         <div class="datos">
@@ -119,9 +119,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 5,200 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('volkswagen-golf')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="bmw-serie-3">
                         <img src="assets/BMW320D.png" alt="BMW Serie 3">
                         <h3>BMW Serie 3 320d</h3>
                         <div class="datos">
@@ -132,7 +131,7 @@
                         </div>
                         <button class="btn-secondary" onclick="openModal('bmw-serie-3')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="audi-a4">
                         <img src="assets/AudiA4_TDI.png" alt="Audi A4">
                         <h3>Audi A4 2.0 TDI Avant</h3>
                         <div class="datos">
@@ -141,9 +140,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 7,500 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('audi-a4')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="mercedes-c-class">
                         <img src="assets/MercedesC220CDI.png" alt="Mercedes C-Class">
                         <h3>Mercedes-Benz Clase C 220 CDI</h3>
                         <div class="datos">
@@ -152,9 +150,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 9,800 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('mercedes-c-class')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="ford-focus">
                         <img src="assets/FordFocus_TDCi.png" alt="Ford Focus">
                         <h3>Ford Focus 1.6 TDCi Titanium</h3>
                         <div class="datos">
@@ -163,9 +160,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 6,300 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('ford-focus')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="opel-astra">
                         <img src="assets/OpelAstraCosmo.png" alt="Opel Astra">
                         <h3>Opel Astra 1.7 CDTI Cosmo</h3>
                         <div class="datos">
@@ -174,9 +170,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: No</span></div>
                             <p class="precio">Precio: 3,800 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('opel-astra')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="renault-megane">
                         <img src="assets/RenaultMegane3.png" alt="Renault Megane">
                         <h3>Renault Megane III 1.5 dCi Dynamique</h3>
                         <div class="datos">
@@ -185,9 +180,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 7,200 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('renault-megane')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="golf-gti">
                         <img src="assets/GTI_JR.png" alt="Golf VI GTI">
                         <h3>Volkswagen Golf VI GTI 2.0 TSI DSG</h3>
                         <div class="datos">
@@ -196,9 +190,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 11,200 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('peugeot-308')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="citroen-c4">
                         <img src="assets/CitroenC4.png" alt="Citroen C4">
                         <h3>Citroën C4 1.6 HDi Exclusive</h3>
                         <div class="datos">
@@ -207,9 +200,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 9,000 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('citroen-c4')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="fiat-500">
                         <img src="assets/Fiat500.png" alt="Fiat 500">
                         <h3>Fiat 500 1.2 Lounge</h3>
                         <div class="datos">
@@ -218,9 +210,8 @@
                             <div class="fila"><span>Etiqueta Medioambiental: B</span></div>
                             <p class="precio">Precio: 4,200 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('fiat-500')">Más Información</button>
                     </div>
-                    <div class="card-vehiculo">
+                    <div class="card-vehiculo" data-id="toyota-corolla">
                         <img src="assets/CorollaD4D.png" alt="Toyota Corolla">
                         <h3>Toyota Corolla 1.4 D-4D Terra</h3>
                         <div class="datos">
@@ -229,7 +220,6 @@
                             <div class="fila"><span>Etiqueta Medioambiental: No</span></div>
                             <p class="precio">Precio: 3,500 €</p>
                         </div>
-                        <button class="btn-secondary" onclick="openModal('toyota-corolla')">Más Información</button>
                     </div>
                 </div>
             </div>
@@ -379,21 +369,49 @@
 
     <!-- Modal para Más Información -->
     <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Solicitar Más Información</h2>
-            <form id="info-form">
-                <label for="modal-nombre">Nombre:</label>
-                <input type="text" id="modal-nombre" name="nombre" required>
-                <label for="modal-correo">Correo Electrónico:</label>
-                <input type="email" id="modal-correo" name="correo" required>
-                <label for="modal-telefono">Número de Teléfono:</label>
-                <input type="tel" id="modal-telefono" name="telefono" required>
-                <label for="modal-comentario">Comentario:</label>
-                <textarea id="modal-comentario" name="comentario"></textarea>
-                <button type="submit" class="btn-primary">Enviar Solicitud</button>
-            </form>
+        <div class="modal-content modal-extended">
+            <div class="modal-header">
+                <h2 id="modal-car-title">Detalles del Vehículo</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-car-info">
+                    <img id="modal-car-img" src="" alt="Coche seleccionado" class="modal-car-img">
+                    <div class="modal-price" id="modal-car-price"></div>
+                    
+                    <div class="car-specs-grid" id="modal-car-specs">
+                        </div>
+
+                    <div class="car-equip">
+                        <h3>Equipamiento Destacado</h3>
+                        <ul id="modal-car-equip">
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="modal-contact">
+                    <h3>¿Te interesa este vehículo?</h3>
+                    <p>Déjanos tus datos y nos pondremos en contacto contigo para concertar una visita o darte más detalles.</p>
+                    <form id="info-form">
+                        <input type="hidden" id="coche-interes" name="coche-interes">
+                        <label for="modal-nombre">Nombre:</label>
+                        <input type="text" id="modal-nombre" name="nombre" required>
+                        
+                        <label for="modal-correo">Correo Electrónico:</label>
+                        <input type="email" id="modal-correo" name="correo" required>
+                        
+                        <label for="modal-telefono">Número de Teléfono:</label>
+                        <input type="tel" id="modal-telefono" name="telefono" required>
+                        
+                        <label for="modal-comentario">Comentario:</label>
+                        <textarea id="modal-comentario" name="comentario"></textarea>
+                        
+                        <button type="submit" class="btn-primary">Solicitar Información</button>
+                    </form>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
         <script src="js/main.js"></script>
