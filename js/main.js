@@ -149,14 +149,14 @@ const carDatabase = {
         title: 'BMW Serie 3 320d',
         img: 'assets/BMW320D.png',
         price: '8,900 €',
-        specs: { 'Año': '2010', 'Kilómetros': '120.320 km', 'Motor': '2.0 Diesel 184cv', 'Combustible': 'Diésel', 'Consumo': '4.7 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Azul Marino', 'Etiqueta': 'C' },
+        specs: { 'Año': '2010', 'Kilómetros': '120.320 km', 'Motor': '2.0 Diesel 184cv', 'Combustible': 'Diésel', 'Consumo': '4.7 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Gris Oscuro', 'Etiqueta': 'C' },
         equipment: ['Faros Bi-Xenon', 'Navegador GPS', 'Sensores de aparcamiento', 'Control de crucero', 'Volante multifunción']
     },
     'audi-a4': {
         title: 'Audi A4 2.0 TDI Avant',
         img: 'assets/AudiA4_TDI.png',
         price: '7,500 €',
-        specs: { 'Año': '2009', 'Kilómetros': '161.160 km', 'Motor': '2.0 TDI 140cv', 'Combustible': 'Diésel', 'Consumo': '5.3 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Gris Meteorito', 'Etiqueta': 'C' },
+        specs: { 'Año': '2009', 'Kilómetros': '161.160 km', 'Motor': '2.0 TDI 140cv', 'Combustible': 'Diésel', 'Consumo': '5.3 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Azul Marino', 'Etiqueta': 'C' },
         equipment: ['Barras de techo cromadas', 'Pantalla MMI', 'Climatizador automático', 'Freno de mano eléctrico']
     },
     'mercedes-c-class': {
@@ -170,35 +170,35 @@ const carDatabase = {
         title: 'Ford Focus 1.6 TDCi Titanium',
         img: 'assets/FordFocus_TDCi.png',
         price: '6,300 €',
-        specs: { 'Año': '2012', 'Kilómetros': '111.115 km', 'Motor': '1.6 TDCi 115cv', 'Combustible': 'Diésel', 'Consumo': '4.2 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Blanco', 'Etiqueta': 'C' },
+        specs: { 'Año': '2012', 'Kilómetros': '111.115 km', 'Motor': '1.6 TDCi 115cv', 'Combustible': 'Diésel', 'Consumo': '4.2 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Gris Plata', 'Etiqueta': 'C' },
         equipment: ['Arranque sin llave', 'Llantas 17"', 'Control por voz (SYNC)', 'Climatizador bi-zona']
     },
     'opel-astra': {
         title: 'Opel Astra 1.7 CDTI Cosmo',
         img: 'assets/OpelAstraCosmo.png',
         price: '3,800 €',
-        specs: { 'Año': '2006', 'Kilómetros': '193.127 km', 'Motor': '1.7 CDTI 100cv', 'Combustible': 'Diésel', 'Consumo': '5.1 L/100km', 'Transmisión': 'Manual 5 vel.', 'Color': 'Negro', 'Etiqueta': 'Sin Distintivo' },
+        specs: { 'Año': '2006', 'Kilómetros': '193.127 km', 'Motor': '1.7 CDTI 100cv', 'Combustible': 'Diésel', 'Consumo': '5.1 L/100km', 'Transmisión': 'Manual 5 vel.', 'Color': 'Azul Marino', 'Etiqueta': 'Sin Distintivo' },
         equipment: ['Llantas de aleación', 'Ordenador de a bordo', 'Aire acondicionado', 'Retrovisores eléctricos']
     },
     'renault-megane': {
         title: 'Renault Megane III 1.5 dCi Dynamique',
         img: 'assets/RenaultMegane3.png',
         price: '7,200 €',
-        specs: { 'Año': '2013', 'Kilómetros': '101.050 km', 'Motor': '1.5 dCi 110cv', 'Combustible': 'Diésel', 'Consumo': '4.4 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Rojo Deseo', 'Etiqueta': 'C' },
+        specs: { 'Año': '2013', 'Kilómetros': '101.050 km', 'Motor': '1.5 dCi 110cv', 'Combustible': 'Diésel', 'Consumo': '4.4 L/100km', 'Transmisión': 'Manual 6 vel.', 'Color': 'Gris Oscuro', 'Etiqueta': 'C' },
         equipment: ['Tarjeta manos libres', 'Llantas 16"', 'Regulador/Limitador de velocidad', 'Bluetooth']
     },
     'golf-gti': { // Usamos este ID porque es el que está en el HTML para el GTI
         title: 'Volkswagen Golf VI GTI 2.0 TSI DSG',
         img: 'assets/GTI_JR.png',
         price: '11,200 €',
-        specs: { 'Año': '2011', 'Kilómetros': '205.630 km', 'Motor': '2.0 TSI 210cv', 'Combustible': 'Gasolina', 'Consumo': '7.4 L/100km', 'Transmisión': 'Automática DSG 6 vel.', 'Color': 'Blanco Puro', 'Etiqueta': 'C' },
+        specs: { 'Año': '2011', 'Kilómetros': '205.630 km', 'Motor': '2.0 TSI 210cv', 'Combustible': 'Gasolina', 'Consumo': '7.4 L/100km', 'Transmisión': 'Automática DSG 6 vel.', 'Color': 'Negro Perlado', 'Etiqueta': 'C' },
         equipment: ['Asientos deportivos a cuadros', 'Llantas AvantGarde M310 19"', 'Faros Bi-Xenon', 'Levas en el volante']
     },
     'citroen-c4': {
         title: 'Citroën C4 1.6 HDi Exclusive',
         img: 'assets/CitroenC4.png',
         price: '9,000 €',
-        specs: { 'Año': '2015', 'Kilómetros': '85.257 km', 'Motor': '1.6 HDi 92cv', 'Combustible': 'Diésel', 'Consumo': '4.1 L/100km', 'Transmisión': 'Manual 5 vel.', 'Color': 'Gris Aluminio', 'Etiqueta': 'C' },
+        specs: { 'Año': '2015', 'Kilómetros': '85.257 km', 'Motor': '1.6 HDi 92cv', 'Combustible': 'Diésel', 'Consumo': '4.1 L/100km', 'Transmisión': 'Manual 5 vel.', 'Color': 'Blanco Perla', 'Etiqueta': 'C' },
         equipment: ['Pantalla táctil', 'Asientos con función masaje', 'Sensores de aparcamiento', 'Climatizador']
     },
     'fiat-500': {
