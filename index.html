@@ -30,17 +30,14 @@
 </header>
 
     <main>
-        <!-- NUEVA SECCIÓN: Hero/Intro + Cómo trabajamos -->
-                <section id="impo-intro" class="impo-section">
+        <section id="impo-intro" class="impo-section">
                     <div class="impo-container">
-                        <!-- BLOQUE 1: Hero / Presentación -->
                         <div class="impo-hero">
                             <img src="assets/ImpoCar_Logo.png" alt="ImpoCar" class="impo-hero-logo">
                             <h2 class="impo-hero-title">ImpoCar, una empresa de la Organización Peral SL</h2>
                             <p class="impo-hero-desc">Nos encargamos de importar coches de otros países. Puedes elegir entre los de nuestro catálogo, pedirnos un coche a la carta con tus especificaciones, o indicarnos uno que ya hayas encontrado y nosotros nos encargamos de traértelo.</p>
                         </div>
 
-                        <!-- BLOQUE 2: Cómo trabajamos -->
                         <div class="impo-how">
                             <header class="how-header">
                                 <h3 class="how-title">CÓMO TRABAJAMOS</h3>
@@ -60,11 +57,10 @@
                                 </div>
 
                                 <div class="how-right">
-                                                    <img src="assets/Golf_R.png" alt="Volkswagen Golf R" class="how-image no-frame">
-                                                </div>
+                                    <img src="assets/Golf_R.png" alt="Volkswagen Golf R" class="how-image no-frame">
+                                </div>
                             </div>
 
-                            <!-- Fila inferior de garantías -->
                             <div class="guarantees-grid">
                                 <div class="guarantee">
                                     <svg class="g-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 20v-1a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -129,7 +125,7 @@
                             <div class="fila"><span>Etiqueta Medioambiental: C</span></div>
                             <p class="precio">Precio: 8,900 €</p>
                         </div>
-                        
+                        <button class="btn-secondary" onclick="openModal('bmw-serie-3')">Más Información</button>
                     </div>
                     <div class="card-vehiculo" data-id="audi-a4">
                         <img src="assets/AudiA4_TDI.png" alt="Audi A4">
@@ -367,7 +363,6 @@
         </div>
     </footer>
 
-    <!-- Modal para Más Información -->
     <div id="modal" class="modal">
         <div class="modal-content modal-extended">
             <div class="modal-header">
@@ -412,30 +407,40 @@
             </div>
         </div>
     </div>
+    
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>Uso de Cookies</h3>
+            <p>En ImpoCar utilizamos cookies propias y de terceros para asegurar el correcto funcionamiento de la web, personalizar tu experiencia y analizar el tráfico. Puedes aceptar todas las cookies o gestionar tus preferencias.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn-accept-cookies">Aceptar todas</button>
+            <button id="reject-cookies" class="btn-reject-cookies">Rechazar</button>
+        </div>
     </div>
 
-        <script src="js/main.js"></script>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var extrasOptions = document.querySelectorAll('#extras-group .extras-option');
-            if (extrasOptions.length) {
-                extrasOptions.forEach(function(opt) {
-                    opt.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        if (this.dataset.value === 'Sin preferencia') {
-                            extrasOptions.forEach(function(o) {
-                                if (o !== opt) o.classList.remove('selected');
-                            });
-                            this.classList.toggle('selected');
-                        } else {
-                            var sinPref = Array.from(extrasOptions).find(function(o) { return o.dataset.value === 'Sin preferencia'; });
-                            if (sinPref) sinPref.classList.remove('selected');
-                            this.classList.toggle('selected');
-                        }
-                    });
+    <script src="js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var extrasOptions = document.querySelectorAll('#extras-group .extras-option');
+        if (extrasOptions.length) {
+            extrasOptions.forEach(function(opt) {
+                opt.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (this.dataset.value === 'Sin preferencia') {
+                        extrasOptions.forEach(function(o) {
+                            if (o !== opt) o.classList.remove('selected');
+                        });
+                        this.classList.toggle('selected');
+                    } else {
+                        var sinPref = Array.from(extrasOptions).find(function(o) { return o.dataset.value === 'Sin preferencia'; });
+                        if (sinPref) sinPref.classList.remove('selected');
+                        this.classList.toggle('selected');
+                    }
                 });
-            }
-        });
-        </script>
+            });
+        }
+    });
+    </script>
 </body>
 </html>

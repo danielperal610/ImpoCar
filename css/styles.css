@@ -654,3 +654,104 @@ main {
     .guarantees-grid { grid-template-columns: repeat(2, minmax(480px, 1fr)); }
     .g-icon { width: 40px; height: 40px; flex: 0 0 40px; }
 }
+
+/* ========================================= */
+/* BANNER DE COOKIES FIJO                    */
+/* ========================================= */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 -10px 30px rgba(11, 35, 64, 0.2);
+    z-index: 999999; /* Asegura que esté por encima de todo */
+    padding: 20px;
+    display: flex; /* Visible de forma nativa desde el principio */
+    flex-direction: column;
+    gap: 15px;
+    border-top: 4px solid var(--primary-color);
+}
+
+/* Esta clase es la que se usa para hacerlo desaparecer */
+.cookie-banner.hidden {
+    display: none !important;
+}
+
+.cookie-content h3 {
+    color: var(--logo-color);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.cookie-content p {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.cookie-buttons button {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accept-cookies {
+    background-color: var(--logo-color);
+    color: var(--white);
+    box-shadow: 0 4px 10px rgba(11, 35, 64, 0.2);
+}
+
+.btn-accept-cookies:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn-reject-cookies {
+    background-color: #f1f5f9;
+    color: var(--logo-color);
+    border: 1px solid #e3eaf5 !important;
+}
+
+.btn-reject-cookies:hover {
+    background-color: #e3eaf5;
+}
+
+/* Diseño para Escritorio */
+@media (min-width: 768px) {
+    .cookie-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 40px;
+    }
+    
+    .cookie-content {
+        flex: 1;
+        padding-right: 40px;
+    }
+    
+    .cookie-buttons {
+        flex-direction: row;
+        min-width: 300px;
+    }
+    
+    .cookie-buttons button {
+        width: auto;
+        flex: 1;
+    }
+}
